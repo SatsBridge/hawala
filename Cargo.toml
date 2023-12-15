@@ -1,0 +1,32 @@
+[package]
+name = "cln-aleph"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Basic CLN plugin
+cln-rpc = "0.1.4"
+cln-plugin = "0.1.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# tokio = { version = "1", features = ["macros", "fs","sync","rt-multi-thread",]}
+futures = "0.3.28"
+tokio = { version = "1.24", features = ["rt-multi-thread", "macros", "fs","sync", "time"] }
+tokio-util = "0.7.8"
+parking_lot = "0.12"
+anyhow = "1"
+log = "0.4"
+hex = "0.4"
+reqwest = { version = "0.11", features = ["json"] }
+substrate-api-client = { git = "https://github.com/scs/substrate-api-client.git", default-features = false, features = ["jsonrpsee-client", "tungstenite-client", "ws-client", "staking-xt", "contracts-xt"] }
+
+# test
+wabt = "0.10.0"
+
+sp-core = { features = ["full_crypto"], git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-keyring = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-runtime = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-version = { git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
+sp-weights = { default-features = false, features = ["serde"], git = "https://github.com/paritytech/polkadot-sdk.git", branch = "master" }
