@@ -73,11 +73,11 @@ aleph-host=ws://0.0.0.0:9944
 
 There are plenty of issues which should be addressed before going mainnet. Some of them require asking for help from Aleph Zero node developers.
 
-[ ] Resolve the issue with the Testnet node
-[ ] Move onto another substrate client - adopt code from the Aleph node project
-[ ] Re-use test code from Aleph node for better smart-contract and network interactions
-[ ] Implement Type-Lenght-Value codec for custom LN messages
-[ ] Add codec for asset quotes & order book
-[ ] Finalize basic ink! HTLC contract. Add redeem & refund functions and tests.
-[ ] Consider other options for Decentralized exchange smart-contracts
+* Resolve the issue with the Testnet node
+* Move onto another substrate client - adopt code from the Aleph node project
+* Re-use test code from Aleph node for better smart-contract and network interactions
+* Implement Type-Lenght-Value codec for custom LN messages
+* Add codec for asset quotes & order book
+* Finalize basic ink! HTLC contract. Add redeem & refund functions and tests.
+* Consider other options for Decentralized exchange smart-contracts
 
