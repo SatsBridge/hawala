@@ -1,0 +1,3 @@
+[submodule "holdinvoice"]
+	path = holdinvoice
+	url = git@github.com:SatsBridge/holdinvoice.git
